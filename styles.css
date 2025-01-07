@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    width: 20%;
+    background-color: #800000; /* Maroon */
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed sidebar */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Scroll if content overflows */
+}
+
+nav h3 {
+    color: #fff; /* White text */
+    margin: 0 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0d8d8; /* Light maroon for links */
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav a:hover {
+    color: #ffffff; /* Brighter white on hover */
+}
+
+main {
+    margin-left: 20%; /* Adjust based on nav width */
+    padding: 30px;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+h1, h2 {
+    color: #800000; /* Maroon */
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+}
+
+.image-container img {
+    width: 100%; /* Force width to match container */
+    height: 100%; /* Force height to match container */
+    object-fit: cover; /* Maintain aspect ratio, crop if needed */
+    border-radius: 8px;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Hidden initially */
+}
+
+.image-container:hover .hover-img {
+    opacity: 1; /* Show hover image */
+}
+
+p {
+    color: #555;
+}
+
+/* Publications Section Styles */
+.publication {
+    margin-bottom: 25px;
+}
+
+.publication h3 {
+    margin-bottom: 5px;
+}
+
+.publication p {
+    margin: 5px 0;
+}
+
+.publication a {
+    color: #800000;
+    text-decoration: none;
+}
+
+.publication a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+}

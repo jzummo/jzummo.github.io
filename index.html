@@ -4,81 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake Zummo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: auto;
-        }
-        nav {
-            width: 20%;
-            background-color: #800000; /* Maroon */
-            padding: 15px;
-            border-right: 1px solid #ddd;
-            box-sizing: border-box;
-        }
-        nav h3 {
-            color: #fff; /* White text for heading */
-            margin: 0 0 15px;
-        }
-        nav a {
-            text-decoration: none;
-            color: #f0d8d8; /* Light maroon for links */
-            display: block;
-            margin-bottom: 10px;
-        }
-        nav a:hover {
-            color: #ffffff; /* Brighter white on hover */
-        }
-        main {
-            width: 80%;
-            padding: 30px;
-            box-sizing: border-box;
-        }
-        h1 {
-            color: #800000; /* Maroon */
-        }
-        .image-container {
-            display: inline-block;
-            position: relative;
-            width: 200px; /* Fixed width */
-            height: 200px; /* Fixed height */
-        }
-        .image-container img {
-            width: 100%; /* Force width to match container */
-            height: 100%; /* Force height to match container */
-            object-fit: cover; /* Maintain aspect ratio, crop if needed */
-            border-radius: 8px;
-            display: block;
-            transition: opacity 0.3s ease;
-        }
-        .hover-img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0; /* Hidden initially */
-        }
-        .image-container:hover .hover-img {
-            opacity: 1; /* Show hover image */
-        }
-        p {
-            color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main CSS file -->
 </head>
 <body>
     <div class="container">
         <!-- Navigation -->
         <nav>
-            <h3>Home</h3>
+            <h3><a href="index.html">Home</a></h3>
+            <h3><a href="research.html">Research</a></h3>
+            <h3><a href="ta-grading.html">TA/Grading</a></h3>
+            <h3><a href="notes-projects.html">Notes/Projects</a></h3>
         </nav>
 
         <!-- Main Content -->
@@ -91,8 +26,15 @@
                 <img src="jz2.jpg" alt="Jake Zummo Hover" class="hover-img">
             </div>
 
-            <p> Hello! My website is currently under construction.
-                I hope to put up some of my academic and programming work soon :)
+            <p> Hello! I am currently a fourth year math major at the University
+                of Chicago expected to graduate in June 2025. Following my graduation,
+                I intend to pursue a Ph.D. in statistics or a closely related field.
+                Please feel free to contact me with any questions at
+                <a href="mailto:jzummo25@uchicago.edu">jzummo25@uchicago.edu</a>.
+            </p>
+
+            <p>
+                Here is the most recent copy of my <a href="cv.pdf" target="_blank">CV</a>.
             </p>
         </main>
     </div>
